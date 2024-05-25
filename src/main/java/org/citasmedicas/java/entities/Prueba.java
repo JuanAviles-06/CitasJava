@@ -8,17 +8,17 @@ public class Prueba {
     public static void main(String[] args) {
 
         //instaciar medico por defecto
-        Medico m = new Medico();
+        Medico m = new Medico(1, "Carlos", "Roriguez", TipoDeIdentificacion.CEDULA_CIUDADANIA, 2728282, 285872, Especialidad.CARDIOLOGIA);
         //asignar el id al medico: utiliza el set
         m.setId(1);
         //imprimir el id del medico : utilizo el  getId
         System.out.println(m.getId());
 
         //crear paciente.
-        Paciente p1 = new Paciente(1, "Camilo", "Corredor", TipoDeIdentificacion.TARJETA_IDENTIDAD, 15585213, "ccabana@gmail.com", 300000000, LocalDate.of(2003, Month.JANUARY, 5), 1.85, 80.0, TipoSangre.A, '-');
+        Paciente p1 = new Paciente(1, "andres", "aviles", TipoDeIdentificacion.CEDULA_CIUDADANIA, 4545454, "hgdhh@gmail.com", 7854444, LocalDate.of(2024, Month.AUGUST, 5), 1.98, 65.5, TipoSangre.AB, '+');
 
         //uitilizar los get y set de lomblok
-        System.out.println("nombre:"+ p1.getNombres()+ ", Apellidos:"+p1.getApellidos());
+        System.out.println("nombre:"+ p1.getNombre()+ ", Apellidos:"+p1.getApellido());
         
         //crear un consultorio
         Consultorio c1 = new Consultorio(1, "cra 15 # 23 sur", 412);
